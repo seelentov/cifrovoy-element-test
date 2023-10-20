@@ -14,16 +14,17 @@
 
 //=======================================================================
 .container{
-  max-width: 1100px;
+  max-width: 941px;
   margin: 0 auto;
   @media(max-width:1200px){
-    max-width: 970px;
+    max-width: 941px;
   }
   @media(max-width:992px){
     max-width: 750px;
   }
   @media(max-width:767px){
     max-width: none !important;
+    padding: 0 15px;
   }
 }
 //=======================================================================
@@ -33,11 +34,9 @@
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
-	// Прижимаем footer
 	> main {
 		flex: 1 1 auto;
 	}
-	// Фикс для слайдеров
 	> * {
 		min-width: 0;
 	}
@@ -46,19 +45,19 @@
 //=======================================================================
 
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background: white; 
+  background: transparent; 
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(105, 105, 105); 
+  background: #1F3F68; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(54, 54, 54); 
+  background: #162c4a; 
 }
 
 //=======================================================================
@@ -86,8 +85,9 @@ body {
 }
 body {
 	line-height: 1;
-	font-family: sans-serif;
+	font-family: 'Gilroy', sans-serif;
 	font-size: 16px;
+  font-weight: 400;
 	//text-rendering: optimizeLegibility;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
@@ -98,8 +98,10 @@ body {
 input,
 button,
 textarea {
-	font-family: sans-serif;
-	font-size: inherit;
+	line-height: 1;
+	font-family: 'Gilroy', sans-serif;
+	font-size: 16px;
+  font-weight: 400;
 }
 button {
 	cursor: pointer;

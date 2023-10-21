@@ -1,0 +1,43 @@
+.banner {
+
+  // .banner__bg
+  
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+  
+  // .banner__container
+  
+  &__container {}
+  
+  // .banner__content
+  
+  &__content {
+    width: 62%;
+  }
+  
+  // .banner__header
+  
+  &__header {
+    font-family: Galien, sans-serif;
+    font-size: 64px;
+    font-size: 64px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+  
+  // .banner__desc
+  
+  &__desc {}
+  
+  // .banner__btn
+  
+  &__btn {}
+  }
+  

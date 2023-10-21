@@ -1,6 +1,7 @@
 @import 'modules/_home.scss';
 @import 'modules/_footer.scss';
 @import 'modules/_header.scss';
+@import 'modules/_banner.scss';
 
 @import 'media.scss';
 @import 'mobile.scss';
@@ -28,7 +29,14 @@
   }
 }
 //=======================================================================
-
+:root{
+  --blue_01: #1F3F68;
+  --blue_02: #316099;
+  --blue_03: #356EAD;
+  --blue_04: #5A98D0;
+  
+}
+//=======================================================================
 .wrapper {
 	min-height: 100%;
 	display: flex;
@@ -123,6 +131,8 @@ ul li {
 }
 img {
 	vertical-align: top;
+  max-width: 100%;
+  max-height: 100%;
 }
 h1,
 h2,

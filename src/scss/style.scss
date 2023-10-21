@@ -92,10 +92,12 @@ body {
 	height: 100%;
 }
 body {
-	line-height: 1;
-	font-family: 'Gilroy', sans-serif;
+	font-family: Gilroy, sans-serif;
 	font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
+  color: var(--blue_01);
+  line-height: 26px; /* 162.5% */
+letter-spacing: 0.8px;
 	//text-rendering: optimizeLegibility;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
@@ -106,10 +108,12 @@ body {
 input,
 button,
 textarea {
-	line-height: 1;
-	font-family: 'Gilroy', sans-serif;
+  color: var(--blue_01);
+	font-family: Gilroy, sans-serif;
 	font-size: 16px;
   font-weight: 400;
+  line-height: 26px; /* 162.5% */
+letter-spacing: 0.8px;
 }
 button {
 	cursor: pointer;

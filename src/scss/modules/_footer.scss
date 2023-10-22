@@ -161,3 +161,41 @@ transition: all .2s ease-in-out;
   &__desc {}
   }
   
+  
+
+  @media(max-width: 1023px){
+    .footer{
+      margin-right: 0px;
+      padding: 91px 0 64px 0;
+    }
+  }
+
+  @media(max-width: 767px){
+    .footer{
+      &__nav{
+        flex-direction: column;
+        gap: 40px;
+      }
+      hr{
+        margin: 44px auto;
+      }
+      &__action{
+        gap: 58px;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      &__bottom{
+        flex-direction: column;
+        gap: 40px;
+        *{
+          width: 100%;
+        }
+      }
+    }
+    .action{
+      &__text{
+        width: 90%;
+    }
+
+  }
+  }

@@ -28,6 +28,14 @@
   // .modal__form
   
   &__form {
+
+    &__header{
+
+    }
+    @media(max-width: 1023px){
+      scale: 0.6;
+    }
+
     &._ok{
       .form__field{
         display: none;
@@ -41,7 +49,7 @@
     }
     padding: 56px;
     position: relative;
-    top: 100%;
+    top: 150%;
     transition: all 0.2s ease-in-out;
     border-radius: 10px;
 background: #FFF;
@@ -54,10 +62,25 @@ box-shadow: 5px 10px 50px 0px rgba(16, 112, 177, 0.20);
   // .form__header
   
   &__header {
-    color: var(--blue_01);
-    font-size: 20px;
-    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 48px;
+    &-desc{
+      color: var(--blue_01);
+      font-size: 20px;
+      font-weight: 600;
+    }
+    &-close{
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      &:hover{
+        scale: 0.9;
+      }
+      width: 40px;
+      height: 40px;
+    }
+    
   }
   
   // .form__field
@@ -133,4 +156,3 @@ color: white;
     color: var(--color_error);
     font-size: 12px;
   }
-  

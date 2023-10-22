@@ -1,13 +1,9 @@
-const bannerHover = (scroll) =>{
-  const bannerHover = document.querySelector('.banner-hover')
-
-  bannerHover.style.background = `linear-gradient(0deg, rgb(0, 136, 255) 0%, rgb(0, 136, 255) ${scroll/5}%, transparent 100%)`
-}
+import bannerGradient from './modules/bannerGradient.js'
+import onEntry from './modules/onEntry.js'
 
 document.addEventListener('DOMContentLoaded',()=>{
 
   document.addEventListener('scroll', ()=>{
-    bannerHover(window.scrollY)
+    bannerGradient(window.scrollY)
   })
-
 })

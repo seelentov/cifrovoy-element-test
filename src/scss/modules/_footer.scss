@@ -136,6 +136,12 @@ height: 56px;
 border-radius: 10px;
 background: #5A98D0;
 text-align: center;
+transition: all .2s ease-in-out;
+&:hover{
+  color: black;
+  scale: 0.95;
+  background: white;
+}
   }
   // .action__text
   

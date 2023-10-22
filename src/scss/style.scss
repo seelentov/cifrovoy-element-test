@@ -14,7 +14,7 @@
 @import 'library/_checkbox.scss';
 @import 'library/_inputs.scss';
 @import 'library/_radios.scss';
-@import 'library/_some.scss';
+@import 'library/_on-entry.scss';
 
 //=======================================================================
 .container{
@@ -87,9 +87,14 @@
 :active {
 	// outline: none;
 }
+a{
+  transition: all 0.2s ease-in-out;
+}
 a:focus,
-a:active {
-	// outline: none;
+a:active,
+a:hover {
+  fill: black;
+	color: black;
 }
 html{
 	height: 100%;

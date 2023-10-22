@@ -43,6 +43,10 @@
   // .clients__items-more
   
   &__items-more {
+    &:hover{
+      background: white;
+    }
+    transition: all 0.2s ease-in-out;
     text-align: center;
     height: 90px;
     display: flex;
@@ -64,5 +68,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    img{
+      transition: all 0.2s ease-in-out;
+    }
+    &:hover{
+      img{
+        scale: 1.5;
+      }
+    }
   }
   

@@ -22,11 +22,13 @@
     align-items: start;
   }
   }
-  .container {
-  }
-  .section-header {
-  }
+
   .advantages-item {
+    transition: all 0.2s ease-in-out;
+    &:hover{
+      scale: 1.2
+    }
+
     &:nth-of-type(2) {
       grid-area: a;
       align-self: center;
@@ -38,9 +40,8 @@
     width: 380px;
     flex-shrink: 0;
     border-radius: 10px;
-background: #FFF;
-/* shadow1 */
-box-shadow: 5px 20px 50px 0px rgba(16, 112, 177, 0.20);
+    background: #FFF;
+    box-shadow: 5px 20px 50px 0px rgba(16, 112, 177, 0.20);
   // .advantages-item__img
   
   &__img {
@@ -76,6 +77,7 @@ box-shadow: 5px 20px 50px 0px rgba(16, 112, 177, 0.20);
     align-items: center;
     gap: 24px;
     color: var(--blue_04);
+    fill: var(--blue_04);
     img{
       width: 24px;
       height: 24px;

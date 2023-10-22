@@ -2,6 +2,8 @@
 @import 'modules/_footer.scss';
 @import 'modules/_header.scss';
 @import 'modules/_banner.scss';
+@import 'modules/_advantages.scss';
+@import 'modules/_clients.scss';
 
 @import 'media.scss';
 @import 'mobile.scss';
@@ -12,6 +14,7 @@
 @import 'library/_checkbox.scss';
 @import 'library/_inputs.scss';
 @import 'library/_radios.scss';
+@import 'library/_some.scss';
 
 //=======================================================================
 .container{
@@ -38,6 +41,7 @@
 }
 //=======================================================================
 .wrapper {
+  position: relative;
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -87,8 +91,7 @@ a:focus,
 a:active {
 	// outline: none;
 }
-html,
-body {
+html{
 	height: 100%;
 }
 body {

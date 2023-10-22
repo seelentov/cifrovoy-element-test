@@ -4,14 +4,19 @@
     "title":"Главная"
   })
 <body>
-  @@include('html/_header.html',{})
+  
   
 <div class="wrapper">
-<main>
+  @@include('html/_header.html',{})
+
   @@include('html/_banner.html',{})
-</main>
-</div>
+  @@include('html/_advantages.html',{})
+  @@include('html/_clients.html',{})
+  
+
   @@include('html/_footer.html',{})
+</div>
+  
   <script src='js/app.min.js'></script>
 </body>
 </html>

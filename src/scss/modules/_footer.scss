@@ -1,8 +1,157 @@
 .footer {
-  
+  padding: 91px 0 64px 96px;
+  color: white;
+  border-radius: 0px 200px 0px 0px;
+background: var(--blue_02);
+margin-right: 96px;
   // .footer__container
-  
-  &__container {
+  hr{
+    display: block;
+    margin: 91px auto;
+    width: 87%;
+    height: 1px;
+    background: #758ca9;
+    &::before{
+      left: 0;
+    content: "";
+    width: 50%;
+    height: 1px;
+    position: absolute;
+    background: #758ca9;
+    }
   }
+  &__container {}
+  
+  // .footer__action
+  
+  &__action {}
+  
+  // .footer__top-button
+  
+  &__top-button {}
+  
+  // .footer__info
+  
+  &__info {
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+  }
+  &__bottom{
+    display: flex;
+    margin-bottom: 64px;
+  }
+  
+  // .footer__info-logo
+  
+  &__info-logo {
+    
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 600;
+    font-size: 28px;
+    img{
+      width: 48px;
+      height: 32px;
+    }
+  }
+  
+  // .footer__info-adress
+  
+  &__info-adress {
+    &:before{
+      content:"A.";
+      font-weight: 600;
+      margin-right: 16px;
+    }
+  }
+  
+  // .footer__info-phone
+  
+  &__info-phone {
+    &:before{
+      content:"T.";
+      font-weight: 600;
+      margin-right: 16px;
+    }
+  }
+  
+  // .footer__info-email
+  
+  &__info-email {
+    &:before{
+      content:"E.";
+      font-weight: 600;
+      margin-right: 16px;
+    }
+  }
+  
+  // .footer__nav
+  
+  &__nav {
+    justify-content: space-around;
+    display: flex;
+    width: calc((100%/3) * 2);
+  }
+  
+  // .footer__nav-grid
+  
+  &__nav-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  // .footer__nav-header
+  
+  &__nav-header {
+    font-size: 20px;
+font-weight: 600;
+margin-bottom: 16px;
+  }
+  
+  // .footer__nav-link
+  
+  &__nav-link {}
+  
+  // .footer__copyright
+  
+  &__copyright {
+    opacity: 0.4;
+  }
+  }
+  .container {
+  }
+  .action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  &__button{
+    margin-right: 20px;
+    width: 220px;
+height: 56px;
+border-radius: 10px;
+background: #5A98D0;
+text-align: center;
+  }
+  // .action__text
+  
+  &__text {
+    width: 50%;
+  }
+  
+  // .action__header
+  
+  &__header {
+    margin-bottom: 32px;
+    width: 100% !important;
+  }
+  
+  // .action__desc
+  
+  &__desc {}
   }
   

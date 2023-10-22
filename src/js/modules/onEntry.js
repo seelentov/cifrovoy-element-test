@@ -5,7 +5,7 @@ const onEntry = (entry) => {
     }
   });
 }
-let options = { threshold: [0.2] };
+let options = { threshold: [0.3] };
 let observer = new IntersectionObserver(onEntry, options);
 let elements = document.querySelectorAll('.on-entry');
 for (let elm of elements) {

@@ -37,7 +37,8 @@
   --blue_02: #316099;
   --blue_03: #356EAD;
   --blue_04: #5A98D0;
-  
+  --color_error: rgb(134, 0, 0);
+  --color_ok: rgb(0, 130, 0);
 }
 //=======================================================================
 .wrapper {
@@ -119,7 +120,7 @@ textarea {
   color: var(--blue_01);
 	font-family: Gilroy, sans-serif;
 	font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 26px; /* 162.5% */
 letter-spacing: 0.8px;
 }
